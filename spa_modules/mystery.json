@@ -1,0 +1,15 @@
+{
+  "module_id": "???-999",
+  "name": "Mystery Payload",
+  "vendor": "Unknown",
+  "version": "0.0.1",
+  "certified": false,
+  "interfaces": {
+    "power": { "bus_v": 12, "max_w": 60 },
+    "data":  { "protocol": "UnknownBus", "max_mbps": 999 },
+    "mechanical": { "mount": "CUSTOM" }
+  },
+  "capabilities": [{ "type": "unknown" }],
+  "telemetry": [],
+  "constraints": { "requires": [], "conflicts": [], "thermal_w": 40 }
+}

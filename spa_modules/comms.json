@@ -1,0 +1,15 @@
+{
+  "module_id": "COM-001",
+  "name": "X-band Downlink",
+  "vendor": "HackSat Labs",
+  "version": "1.0.0",
+  "certified": true,
+  "interfaces": {
+    "power": { "bus_v": 28, "max_w": 25 },
+    "data":  { "protocol": "SpaceWire", "max_mbps": 150 },
+    "mechanical": { "mount": "MOD-STD-1" }
+  },
+  "capabilities": [{ "type": "comms", "downlink_mbps": 80, "tag": "COMPUTE" }],
+  "telemetry": [{ "name": "temp_c", "type": "float" }, { "name": "link_status", "type": "enum", "values": ["UP", "DOWN"] }],
+  "constraints": { "requires": ["COMPUTE"], "conflicts": [], "thermal_w": 10 }
+}

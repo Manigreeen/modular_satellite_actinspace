@@ -1,0 +1,15 @@
+{
+  "module_id": "IMG-001",
+  "name": "NASA Hubble Pod",
+  "vendor": "NASA",
+  "version": "21.4.1",
+  "certified": true,
+  "interfaces": {
+    "power": { "bus_v": 28, "max_w": 20 },
+    "data":  { "protocol": "SpaceWire", "max_mbps": 999 },
+    "mechanical": { "mount": "MOD-STD-1" }
+  },
+  "capabilities": [{ "type": "imaging", "tag": "COMPUTE" }],
+  "telemetry": [{ "name": "cam_status", "type": "bool", "status": true }],
+  "constraints": { "requires": ["COMPUTE"], "conflicts": [], "thermal_w": 10 }
+}

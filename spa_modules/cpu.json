@@ -1,0 +1,15 @@
+{
+  "module_id": "CPU-001",
+  "name": "Compute Unit",
+  "vendor": "HackSat Labs",
+  "version": "1.0.0",
+  "certified": true,
+  "interfaces": {
+    "power": { "bus_v": 28, "max_w": 15 },
+    "data":  { "protocol": "SpaceWire", "max_mbps": 200 },
+    "mechanical": { "mount": "MOD-STD-1" }
+  },
+  "capabilities": [{ "type": "compute", "tag": "COMPUTE" }],
+  "telemetry": [{ "name": "temp_c", "type": "float" }, { "name": "cpu_load", "type": "float" }],
+  "constraints": { "requires": [], "conflicts": [], "thermal_w": 8 }
+}
