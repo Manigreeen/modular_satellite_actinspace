@@ -1,4 +1,7 @@
-import serial
+import serial # Lectura y escritura en serial -> Bridge entre Python (lógica) y Arduino (físico)
+import threading # Permite correr la lógica SPA y leer serial simultáneamente -> 2 Threads
+import queue # Permite armar queues de mensajes -> Thread serial hace "enqueue" mensajes y Thread lógica hace "dequeue" (leer)
+import jsonschema # Identificar JSONs de módulos válidos
 import time
 
 # ---------- CRC16-CCITT (FALSE) ----------
